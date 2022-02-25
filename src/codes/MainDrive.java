@@ -56,9 +56,27 @@ public class MainDrive {
 				int randomNum = (int) (Math.random()*45+1);
 				
 				
+				boolean isDuplOk = true;
+				
+				for (int num : winNumbers) {
+					if (num == randomNum) {
+						isDuplOk = false;
+						break;
+					}
+				}
+				
+				if (isDuplOk) {
+					winNumbers[i] = randomNum;
+					break;
+				}
 				
 			}
 			
+		}
+		
+		
+		for (int num : winNumbers) {
+			System.out.println(num);
 		}
 		
 
