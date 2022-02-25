@@ -83,6 +83,29 @@ public class MainDrive {
 //		winNumbers[5] = 31;
 		
 		
+//		랜덤으로 만들어진 당첨번호들을 > 작은 수 ~ 큰 수로 정리.
+		
+		
+		for (int i=0 ; i < winNumbers.length ; i++) {
+			
+			for (int j=0 ; j < winNumbers.length-1 ; j++) {
+				
+				if (winNumbers[j] > winNumbers[j+1]) {
+					
+					int backUp = winNumbers[j];
+					
+					winNumbers[j] = winNumbers[j+1];
+					
+					winNumbers[j+1] = backUp;
+					
+				}
+ 				
+			}
+			
+		}
+		
+		
+//		정리 된 당첨번호를 확인
 		
 		for (int num : winNumbers) {
 			System.out.println(num);
