@@ -140,7 +140,13 @@ public class MainDrive {
 		for (int num : winNumbers) {
 			System.out.println(num);
 		}
+		
+//		보너스번호도 확인
+		
+		System.out.println("보너스번호 : " + bonusNum);
 
+		
+//		맞춘 갯수 확인
 		
 		int correctCount = 0;
 
@@ -157,12 +163,16 @@ public class MainDrive {
 		}
 		
 		
+//		등수 판정
+		
 		if (correctCount == 6) {
 			System.out.println("1등");
 		}
 		else if (correctCount == 5) {
-//			보너스번호 로직 추가 필요
-			System.out.println("임시 - 3등");
+//			보너스번호 로직
+			
+			
+			
 		}
 		else if (correctCount == 4) {
 			
