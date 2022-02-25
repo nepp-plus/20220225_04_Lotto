@@ -111,6 +111,8 @@ public class MainDrive {
 //		winNumbers[3] = 21;
 //		winNumbers[4] = 30;
 //		winNumbers[5] = 31;
+//		
+//		bonusNum = 45;
 		
 		
 //		랜덤으로 만들어진 당첨번호들을 > 작은 수 ~ 큰 수로 정리.
@@ -171,7 +173,23 @@ public class MainDrive {
 		else if (correctCount == 5) {
 //			보너스번호 로직
 			
+			boolean isBonusCorrect = false;
 			
+			for (int myNum : myNumbers) {
+				
+				if (myNum == bonusNum) {
+					isBonusCorrect = true;
+					break;
+				}
+				
+			}
+			
+			if (isBonusCorrect) {
+				System.out.println("2등");
+			}
+			else {
+				System.out.println("3등");
+			}
 			
 		}
 		else if (correctCount == 4) {
